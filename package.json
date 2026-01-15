@@ -12,13 +12,17 @@
     "start": "npm run clean && next build && next start",
     "lint": "eslint --fix",
     "clean": "rm -rf .next && rm -rf out",
-    "generate-site-images": "node scripts/generate-site-images.js"
+    "generate-site-images": "node ./node_modules/@pixelated-tech/components/dist/scripts/generate-site-images.js",
+    "config:vault": "npx tsx ./node_modules/@pixelated-tech/components/dist/scripts/config-vault.ts",
+    "config:encrypt": "npm run config:vault -- encrypt src/app/config/pixelated.config.json",
+    "config:decrypt": "npm run config:vault -- decrypt src/app/config/pixelated.config.json.enc",
+    "release": "./node_modules/@pixelated-tech/components/dist/scripts/release.sh"
   },
   "scripts-unused": {
     "dev": "next dev --turbopack"
   },
   "dependencies": {
-    "@pixelated-tech/components": "^3.3.3",
+    "@pixelated-tech/components": "^3.7.10",
     "html-entities": "^2.6.0",
     "md5": "^2.3.0",
     "next": "^16.1.0",
@@ -28,7 +32,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
     "@next/third-parties": "^16.1.0",
-    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^25.0.3",
     "@types/prop-types": "^15.7.15",
     "@types/react": "^19.2.7",
@@ -39,7 +42,6 @@
     "eslint-config-next": "^16.1.0",
     "sass": "^1.97.1",
     "sass-loader": "^16.0.6",
-    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.50.0",
     "webpack": "^5.104.1"
