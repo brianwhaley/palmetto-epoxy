@@ -7,6 +7,7 @@ import { emailFormData } from "@pixelated-tech/components";
 import { Modal, handleModalOpen } from "@pixelated-tech/components";
 import { Loading, ToggleLoading } from "@pixelated-tech/components";
 import formData from "@/app/data/submitreviewform.json";
+import { PageSection } from "@pixelated-tech/components";
 
 export default function SubmitReview() {
 
@@ -47,28 +48,22 @@ export default function SubmitReview() {
 	return (
 		<>
 			<CalloutLibrary.PageTitle title="Submit your Review" />
-			<section className="" id="submitreview-section">
-				<div className="section-container">
-					<div className="row-12col">
-						<div className="grid-s1-e13">
-							<h2 className="centered">
+			<PageSection columns={1} className="" id="submitreview-section"> 
+				<h2 className="centered">
 								Share your experience with Palmetto Epoxy!<br />
 								We value your feedback and <br />
 								want to hear about your epoxy flooring project.  
-								<br /><br /><br />
-							</h2>
-							<FormEngine 
-								name="submitreview" 
-								id="submitReviewForm" 
-								formData={formData} 
-								onSubmitHandler={handleSubmit} 
-							/>
-						</div>
-					</div>
-				</div>
-			</section>
+					<br /><br /><br />
+				</h2>
+				<FormEngine 
+					name="submitreview" 
+					id="submitReviewForm" 
+					formData={formData} 
+					onSubmitHandler={handleSubmit} 
+				/>
+			</PageSection>
 			<Loading />
-			<Modal modalContent={modalContent} />
+			<Modal modalContent={modalContent ?? <></>} />
 		</>
 	);
 }

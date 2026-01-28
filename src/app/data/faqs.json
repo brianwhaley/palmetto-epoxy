@@ -1,0 +1,180 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Palmetto Epoxy \u2013 Epoxy Flooring & Surface Coatings FAQs",
+  "description": "Frequently asked questions about epoxy floor coatings, concrete polishing, paver sealing, driveway coatings, and resin surfaces for Palmetto Epoxy in Bluffton, South Carolina.",
+  "author": {
+    "@type": "Organization",
+    "name": "Palmetto Epoxy",
+    "url": "https://palmetto-epoxy.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Palmetto Epoxy",
+    "url": "https://palmetto-epoxy.com"
+  },
+  "inLanguage": "en-US",
+  "datePublished": "2026-01-19",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is epoxy floor coating and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Epoxy floor coating is a multi-part resin system that chemically bonds to concrete to create a seamless, durable, and moisture-resistant surface. It works by penetrating the concrete pores and curing into a hard protective layer that resists stains, chemicals, abrasion, and impact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best material for garage floor coatings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best material depends on your goals and budget. Epoxy systems offer excellent durability and design flexibility. Polyaspartic and polyurea systems cure faster and provide superior moisture and UV resistance, making them ideal for coastal climates like Bluffton and Hilton Head."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does epoxy flooring cost in South Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Epoxy flooring typically ranges from $4 to $10 per square foot depending on surface condition, system type, design complexity, and moisture mitigation requirements. Commercial and specialty systems may cost more due to heavier prep and performance specifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does epoxy floor installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential garage floors can be installed in 1 to 2 days. Commercial projects may take several days depending on size, surface condition, and cure time. Fast-cure polyaspartic systems can often be completed and reopened within 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do epoxy floors last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A professionally installed epoxy floor can last 10 to 20 years in residential settings and 5 to 15 years in commercial environments, depending on traffic, maintenance, and exposure to moisture and chemicals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is epoxy flooring good for humid coastal climates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, when properly installed with moisture testing and vapor mitigation. Coastal humidity and high groundwater require specialized primers and moisture-tolerant systems to prevent delamination and bubbling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the installation process for epoxy flooring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process includes diamond grinding the concrete, repairing cracks, moisture testing, applying a primer, installing the base coat, broadcasting decorative flakes or pigments, scraping and vacuuming, and sealing with a protective topcoat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can epoxy be installed over old concrete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, epoxy can be installed over old concrete as long as the surface is properly cleaned, mechanically profiled, and repaired. Poor surface preparation is the most common cause of coating failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is concrete polishing and how is it different from epoxy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Concrete polishing is a mechanical grinding and densifying process that creates a glossy, hardened concrete surface without a topical coating. Unlike epoxy, polished concrete is breathable and ideal for retail, offices, and high-traffic commercial spaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does polished concrete cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Polished concrete typically ranges from $3 to $8 per square foot depending on grind level, aggregate exposure, surface condition, and desired gloss level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is paver sealing and why is it important?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Paver sealing protects outdoor pavers from moisture, stains, UV fading, weed growth, and sand loss. In coastal South Carolina, sealing helps prevent salt damage, efflorescence, and premature deterioration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should pavers be resealed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most pavers should be resealed every 2 to 3 years depending on sun exposure, traffic, and weather conditions. High-traffic driveways may require more frequent resealing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are driveway coatings and are they durable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Driveway coatings are specialized resin or acrylic systems designed to protect and enhance concrete driveways. When properly installed, they improve appearance, resist stains, and extend the life of the concrete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are resin countertops and how do they compare to stone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Resin countertops are seamless, custom-poured surfaces that offer unique designs, chemical resistance, and easy maintenance. Compared to granite or quartz, resin allows more creative finishes and integrated sinks with fewer seams."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are epoxy floors slippery when wet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Epoxy floors can be formulated with slip-resistant additives and textured topcoats to provide excellent traction, even in wet environments like garages, patios, and commercial kitchens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I maintain an epoxy or polished concrete floor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Routine maintenance includes sweeping, damp mopping with neutral cleaners, and avoiding harsh chemicals. Commercial spaces may benefit from periodic burnishing or recoating to maintain gloss and protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes epoxy floors to fail or peel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include poor surface preparation, excessive moisture vapor, improper mixing, and installing coatings over contaminated concrete. Professional testing and preparation are critical for long-term performance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can epoxy floors increase home value?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, epoxy floors improve durability, appearance, and functionality, making garages, workshops, and patios more attractive to buyers and increasing perceived home value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer warranties on epoxy and coatings systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most professional coating systems include manufacturer and workmanship warranties that range from 1 to 15 years depending on the system and application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose the right flooring system for my space?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The right system depends on traffic, moisture conditions, chemical exposure, budget, and design goals. A professional site evaluation helps determine whether epoxy, polyaspartic, polished concrete, or another system is the best fit."
+      }
+    }
+  ]
+}

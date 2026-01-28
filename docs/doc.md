@@ -31,7 +31,7 @@ npm outdated | awk 'NR>1 {print $1"@"$4}' | xargs npm install --force --save
 npm audit fix --force
 npm run lint
 npm version patch --force
-git add * -v
+git add . -v
 git commit -m "https://www.cve.org/CVERecord?id=CVE-2025-55184"
 git push palmetto-epoxy dev --tags
 git push palmetto-epoxy dev:main

@@ -3,8 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import * as CalloutLibrary from "@/app/elements/calloutlibrary";
-import { Callout } from "@pixelated-tech/components";
-import { getFullPixelatedConfig } from "@pixelated-tech/components";
+import { Callout, usePixelatedConfig, Loading } from "@pixelated-tech/components";
 import { Carousel } from "@pixelated-tech/components";
 import type { CarouselCardType } from "@pixelated-tech/components";
 import { getContentfulEntriesByType } from "@pixelated-tech/components";
@@ -14,12 +13,17 @@ export default function Home() {
 
 	const [ carouselCards , setCarouselCards ] = useState<CarouselCardType[]>([]);
 
-	const config = getFullPixelatedConfig();
+	const config = usePixelatedConfig();
+
+	if (!config) {
+		return <Loading />;
+	}
+
 	const apiProps = {
-		base_url: config.contentful?.base_url ?? "",
-		space_id: config.contentful?.space_id ?? "",
-		environment: config.contentful?.environment ?? "",
-		delivery_access_token: config.contentful?.delivery_access_token ?? "",
+		base_url: config?.contentful?.base_url ?? "",
+		space_id: config?.contentful?.space_id ?? "",
+		environment: config?.contentful?.environment ?? "",
+		delivery_access_token: config?.contentful?.delivery_access_token ?? "",
 	};
 
 	useEffect(() => {

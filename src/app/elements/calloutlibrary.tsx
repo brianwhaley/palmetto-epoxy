@@ -1,14 +1,17 @@
 "use client";
 
 import React from "react";
+import PropTypes, { InferProps } from "prop-types";
 import { Callout } from "@pixelated-tech/components";
 import { PageTitleHeader } from "@pixelated-tech/components";
 
 
 
-export type PageTitleType = {
-	title: string
-}
+
+PageTitle.propTypes = {
+	title: PropTypes.string.isRequired,
+};
+export type PageTitleType = InferProps<typeof PageTitle.propTypes>;
 export function PageTitle({title}: PageTitleType ) {
 	return (
 		<>
@@ -21,7 +24,8 @@ export function PageTitle({title}: PageTitleType ) {
 }
 
 
-
+ContactCTA.propTypes = {};
+export type ContactCTAType = InferProps<typeof ContactCTA.propTypes>;
 export function ContactCTA() {
 	return (
 		<div className="section-container">
@@ -41,6 +45,8 @@ export function ContactCTA() {
 
 
 
+LowCountrysBest.propTypes = {};
+export type LowCountrysBestType = InferProps<typeof LowCountrysBest.propTypes>;
 export function LowCountrysBest() {
 	return (
 		<div className="section-container">

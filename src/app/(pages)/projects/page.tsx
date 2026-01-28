@@ -2,10 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import * as CalloutLibrary from "@/app/elements/calloutlibrary";
-import { Carousel } from "@pixelated-tech/components";
+import { Carousel, usePixelatedConfig, getContentfulEntriesByType, getContentfulImagesFromEntries, Loading } from "@pixelated-tech/components";
 import type { CarouselCardType } from "@pixelated-tech/components";
-import { getFullPixelatedConfig } from "@pixelated-tech/components";
-import { getContentfulEntriesByType, getContentfulImagesFromEntries } from "@pixelated-tech/components";
+import { PageSection } from "@pixelated-tech/components";
 
 // const imageOrigin = "https://images.palmetto-epoxy.com";
 
@@ -15,12 +14,17 @@ export default function Projects() {
 
 	const [ carouselCards , setCarouselCards ] = useState<CarouselCardType[]>([]);
 
-	const config = getFullPixelatedConfig();
+	const config = usePixelatedConfig();
+
+	if (!config) {
+		return <Loading />;
+	}
+
 	const apiProps = {
-		base_url: config.contentful?.base_url ?? "",
-		space_id: config.contentful?.space_id ?? "",
-		environment: config.contentful?.environment ?? "",
-		delivery_access_token: config.contentful?.delivery_access_token ?? "",
+		base_url: config?.contentful?.base_url ?? "",
+		space_id: config?.contentful?.space_id ?? "",
+		environment: config?.contentful?.environment ?? "",
+		delivery_access_token: config?.contentful?.delivery_access_token ?? "",
 	};
 
 	useEffect(() => {
@@ -39,7 +43,6 @@ export default function Projects() {
 							: { image: img.image,
 								imageAlt: img.imageAlt };
 					});
-					console.log(images);
 					reviewCards.push({
 						index: card.sys.contentType.sys.id.indexOf("card"),
 						cardIndex: reviewCards.length,
@@ -65,18 +68,16 @@ export default function Projects() {
 		<>
 			<CalloutLibrary.PageTitle title="Projects" />
 			
-			<section className="" id="projects-section">
-				<div className="section-container">
-					<Carousel 
-						cards={carouselCards} 
-						draggable={false} 
-						imgFit='contain' />
-				</div>
-			</section>
+			<PageSection columns={1} className="" id="projects-section">
+				<Carousel 
+					cards={carouselCards} 
+					draggable={false} 
+					imgFit='contain' />
+			</PageSection>
             
-			<section className="section-bluechip" id="contact-section">
+			<PageSection columns={1} className="section-bluechip" id="contact-section">
 				<CalloutLibrary.ContactCTA />
-			</section>
+			</PageSection>
 		</>
 	);
 }

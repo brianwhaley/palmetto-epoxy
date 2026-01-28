@@ -6,6 +6,7 @@ import { FormEngine } from "@pixelated-tech/components";
 import { emailFormData } from "@pixelated-tech/components";
 import { Loading, ToggleLoading } from "@pixelated-tech/components";
 import { Modal, handleModalOpen } from "@pixelated-tech/components";
+import { PageSection, PageGridItem } from "@pixelated-tech/components";
 
 import formData from "@/app/data/contactform.json";
 
@@ -48,32 +49,29 @@ export default function Contact() {
 	return (
 		<>
 			<CalloutLibrary.PageTitle title="Contact Us" />
-			<section className="" id="contactus-section">
-				<div className="section-container">
-					<div className="row-12col">
-						<div className="grid-s1-e6">
-							<div>
-								Please fill out the form below. 
-								We would LOVE to answer any questions or to setup 
-								an appointment to talk about our favorite subject… 
-								Epoxy Flooring! 
-								<br /><br /><br /><br />
-							</div>
-							<FormEngine 
-								name="newrequest" 
-								id="newRequestForm" 
-								formData={formData} 
-								onSubmitHandler={handleSubmit} 
-							/>
-						</div>
-						<div className="grid-s7-e13">
-							<iframe src={`https://calendar.google.com/calendar/embed?src=${calendarID}&mode=WEEK`} style={{ border: 0 }} width="100%" height="600px" frameBorder="0" scrolling="no"></iframe>
-						</div>
+			<PageSection columns={2} className="" id="contactus-section">
+				<PageGridItem>
+					<div>
+						Please fill out the form below. 
+						We would LOVE to answer any questions or to setup 
+						an appointment to talk about our favorite subject… 
+						Epoxy Flooring! 
+						<br /><br /><br /><br />
 					</div>
-				</div>
-			</section>
+					<FormEngine 
+						name="newrequest" 
+						id="newRequestForm" 
+						method="post" 
+						formData={formData} 
+						onSubmitHandler={handleSubmit} 
+					/>
+				</PageGridItem>
+				<PageGridItem>
+					<iframe src={`https://calendar.google.com/calendar/embed?src=${calendarID}&mode=WEEK`} style={{ border: 0 }} width="100%" height="600px" frameBorder="0" scrolling="no"></iframe>
+				</PageGridItem>
+			</PageSection>
 			<Loading />
-			<Modal modalContent={modalContent} />
+			<Modal modalContent={modalContent ?? <></>} />
 		</>
 	);
 }

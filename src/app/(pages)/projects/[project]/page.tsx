@@ -1,13 +1,13 @@
  
 "use client";
 
+import React from "react";
 import { use, useState, useEffect, useRef } from 'react';
 // import { Metadata } from 'next';
 import * as CalloutLibrary from "@/app/elements/calloutlibrary";
-import { getContentfulEntriesByType, getContentfulEntryByField, getContentfulImagesFromEntries } from "@pixelated-tech/components";
-import { setClientMetadata } from '@pixelated-tech/components';
-import { getFullPixelatedConfig } from "@pixelated-tech/components";
+import { getContentfulEntriesByType, getContentfulEntryByField, getContentfulImagesFromEntries, usePixelatedConfig, Loading } from "@pixelated-tech/components";
 import { Carousel } from "@pixelated-tech/components";
+import { PageSection } from '@pixelated-tech/components';
 
 export default function Project({params}: { params: Promise<{ project: string }> }){
 
@@ -21,12 +21,17 @@ export default function Project({params}: { params: Promise<{ project: string }>
 		};
 	}
 
-	const config = getFullPixelatedConfig();
+	const config = usePixelatedConfig();
+
+	if (!config) {
+		return <Loading />;
+	}
+
 	const apiProps = {
-		base_url: config.contentful?.base_url ?? "",
-		space_id: config.contentful?.space_id ?? "",
-		environment: config.contentful?.environment ?? "",
-		delivery_access_token: config.contentful?.delivery_access_token ?? "",
+		base_url: config?.contentful?.base_url ?? "",
+		space_id: config?.contentful?.space_id ?? "",
+		environment: config?.contentful?.environment ?? "",
+		delivery_access_token: config?.contentful?.delivery_access_token ?? "",
 	};
 
 	const [ card , setCard ] = useState<Card | null>(null);
@@ -65,53 +70,38 @@ export default function Project({params}: { params: Promise<{ project: string }>
 	}, []);
 
 
-	useEffect(() => {
-		setClientMetadata({
-			title: "Palmetto Epoxy | Projects - " + card?.fields.title,
-			description: card?.fields.description?.split('. ', 1)[0] ?? "",
-			keywords: card?.fields.keywords?.split('. ', 1)[0] ?? ""
-		});
-	}, [card]);
-	
-
 	return (
 		<>
 			{ isMounted ? (
 	      		<>
 					<CalloutLibrary.PageTitle title={card?.fields.title || ""} />
 							
-					<section id="project-carousel-section">
-						<div className="section-container">
-							<div>
-								{card?.fields.description}
-							</div>
+					<PageSection columns={1} id="project-carousel-section">
+						<div>
+							{card?.fields.description}
 						</div>
-						<div className="section-container">
-							<Carousel
-								cards={carouselCards.map((card, index) => ({
-									...card,
-									index: index,
-									cardIndex: index,
-									cardLength: carouselCards.length
-								}))} 
-								draggable={true}
-								imgFit='contain'
-							/>
-						</div>
-					</section>
+						<Carousel
+							cards={carouselCards.map((card, index) => ({
+								...card,
+								index: index,
+								cardIndex: index,
+								cardLength: carouselCards.length
+							}))} 
+							draggable={true}
+							imgFit='contain'
+						/>
+					</PageSection>
 					<br /><br />
 				</>
 			) : (
-				<section id="project-section">
-					<div className="section-container">
-						<div>Loading data...</div>
-					</div>
-				</section>
+				<PageSection columns={1} id="project-section">
+					<div>Loading data...</div>
+				</PageSection>
 			)
 			}
-			<section className="section-bluechip" id="contact-section">
+			<PageSection columns={1} className="section-bluechip" id="contact-section">
 				<CalloutLibrary.ContactCTA />
-			</section>
+			</PageSection>
 		</>
 		
 	);
