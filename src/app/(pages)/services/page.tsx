@@ -18,7 +18,9 @@ export default function Services() {
 						title='Residential'
 						content='Enhance your home with durable, stylish epoxy floors tailored to any room.
 							Our expert team ensures a flawless finish that lasts.  
-							Perfect for garages, basements, kitchen and bathroom countertops, and living spaces.'
+							Perfect for garages, basements, kitchen and bathroom countertops, and living spaces.
+							Choose from a variety of colors and finishes to match your home decor.
+							Experience the benefits of easy maintenance, stain resistance, and long-lasting beauty.'
 						layout='vertical' 
 						imgShape='squircle' />
 				</PageGridItem>
@@ -28,7 +30,9 @@ export default function Services() {
 						title='Commercial'
 						content='Upgrade your business space with sleek, resilient commercial-grade epoxy flooring.
 							Ideal for retail stores, offices, warehouses, and showrooms, our epoxy solutions
-							offer both aesthetic appeal and long-lasting durability to withstand high traffic.'
+							offer both aesthetic appeal and long-lasting durability to withstand high traffic.
+							Choose from a variety of colors and finishes to create a professional environment
+							that reflects your brand. Enjoy easy maintenance and resistance to stains, chemicals, and wear.'
 						layout='vertical' 
 						imgShape='squircle' />
 				</PageGridItem>
@@ -56,13 +60,15 @@ export default function Services() {
 						layout='horizontal' 
 						direction={"right"}
 						gridColumns={{left: 3, right: 1}}
-						img='https://images.ctfassets.net/0b82pebh837v/39vkbzDrlvLtK3fF86T7Zy/7b21429c376a679dd364cd56685b00f2/Seapines_1_Done.JPG?fm=webp'
+						img='/images/projects/IMG_8829.jpeg'
 						title='Resin Countertops'
 						content='Upgrade your kitchen or bathroom with our durable, stylish resin countertops.
+							Double your counter space with our seamless epoxy resin overlays that fit over existing surfaces.
 							Our epoxy resin surfaces are easy to clean, resistant to stains, 
 							and available in a variety of colors and finishes to match your decor. 
 							Perfect for homeowners seeking a modern, low-maintenance solution that 
-							enhances both functionality and aesthetics. '
+							enhances both functionality and aesthetics.
+							Experience the benefits of a seamless, long-lasting countertop that elevates your space.'
 						imgShape='squircle' />
 				</PageGridItem>
 			</PageSection>
@@ -74,7 +80,8 @@ export default function Services() {
 						title='Paver Sealing'
 						content='Protect and beautify your pavers with our professional sealing services.
 							Our high-quality sealants enhance color, prevent weed growth, and extend the life of your outdoor surfaces.
-							Ideal for patios, driveways, and walkways.'
+							Ideal for patios, driveways, and walkways.
+							Choose from various finishes to achieve the desired look while ensuring durability against weather and wear.'
 						layout='vertical' 
 						imgShape='squircle' />
 				</PageGridItem>
@@ -84,6 +91,7 @@ export default function Services() {
 						title='Driveway Coating'
 						content='Boost curb appeal and durability with our specialized driveway coating solutions.
 							Our coatings protect against weather damage, oil stains, and wear while providing a sleek, finished look.
+							Applicable for both residential and commercial properties.
 							Choose from various colors and textures to suit your style.'
 						layout='vertical' 
 						imgShape='squircle' />
@@ -94,6 +102,7 @@ export default function Services() {
 						title='Concrete Polishing'
 						content='Bring out the natural beauty of your concrete with our expert polishing services.
 							Our process enhances durability, reduces dust, and creates a glossy finish that elevates any space.
+							Choose from various sheen levels to achieve the desired look while improving maintenance and longevity.
 							Perfect for both residential and commercial applications.'
 						layout='vertical' 
 						imgShape='squircle' />

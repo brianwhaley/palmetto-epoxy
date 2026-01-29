@@ -104,6 +104,19 @@
 				]
 			},
 			{
+				"name": "Resin Countertops",
+				"description": "Transform your kitchen or bathroom with our high-performance resin countertops.",
+				"url": "https://www.palmetto-epoxy.com/services",
+				"areaServed": [
+					"Bluffton SC",
+					"Hilton Head SC",
+					"Hardeeville SC",
+					"Okatie SC",
+					"Ridgeland SC",
+					"Beaufort SC"
+				]
+			},
+			{
 				"name": "Concrete Polishing",
 				"description": "Bring out the natural beauty of your concrete with our expert polishing services.\n",
 				"url": "",
@@ -282,6 +295,14 @@
 				"epoxy floor coatings",
 				"humans txt"
 			]
+		},
+		{
+			"name": "Security Txt",
+			"hidden": true,
+			"path": "/security.txt",
+			"title": "Palmetto Epoxy - Security Txt",
+			"description": "Security contact and vulnerability disclosure information.",
+			"keywords": ["Palmetto Epoxy","security txt","security"]
 		}
 	],
 	"visualdesign": {
