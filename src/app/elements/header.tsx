@@ -11,20 +11,20 @@ export default function Header() {
 		<div className="section-container">
 
 			<div className="row-10col">
-				<div className="grid-s1-e3 headerLogo">
+				<div className="grid-s1-e3 header-logo">
 					<a href="/">
 						<SmartImage src="/images/palmetto-epoxy-logo.jpg" 
 							alt="Palmetto Epoxy Logo" aboveFold={true} 
 							fetchPriority="high" loading="eager" />
 					</a>
 				</div>
-				
+			
 
-				<div className="grid-s3-e10 headerRight">
+				<div className="grid-s3-e10 header-right">
 
 					<div className="row-1col">
-						
-						<div className="gridItem headerAddress">
+					
+						<div className="grid-item header-address">
 							<h3>Dennis and Martha Aberle</h3>
 							<h3>Bluffton, SC</h3>
 							<h3>palmettoepoxy@gmail.com</h3>
@@ -32,7 +32,7 @@ export default function Header() {
 							<br />
 						</div>
 
-						<div className="gridItem headerSocial centered">
+						<div className="grid-item header-social centered">
 							<Social />
 						</div>
 

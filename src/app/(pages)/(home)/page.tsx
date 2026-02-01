@@ -52,7 +52,7 @@ export default function Home() {
 
       		<PageSection columns={1} id="homeCTA-section">
 				<PageGridItem>
-					<div className="homeCTA">
+					<div className="home-cta">
 						<div className="">
 							Elevate your space with a solution 
 							<br />
@@ -96,7 +96,7 @@ export default function Home() {
 			</PageSection>
 
 			<PageSection  columns={1} className="section-pavers text-outline" id="reviewCTA-section">
-				<div className="homeCTA">
+				<div className="home-cta">
 					<div className="">
 						Voice your opinion and  
 						<br />

@@ -7,7 +7,10 @@ import { PageTitleHeader } from "@pixelated-tech/components";
 
 
 
-
+/**
+ * PageTitle - Page title section with outlined text
+ * @param title - The title text to display
+ */
 PageTitle.propTypes = {
 	title: PropTypes.string.isRequired,
 };
@@ -24,12 +27,16 @@ export function PageTitle({title}: PageTitleType ) {
 }
 
 
+/**
+ * ContactCTA - Call to action section for contacting
+ * @param none
+ */
 ContactCTA.propTypes = {};
 export type ContactCTAType = InferProps<typeof ContactCTA.propTypes>;
 export function ContactCTA() {
 	return (
 		<div className="section-container">
-			<div className="contactCTA">
+			<div className="contact-cta">
 				<div className="text-outline">
                     Discover the transformative power of epoxy flooring
 					<br />
@@ -44,7 +51,10 @@ export function ContactCTA() {
 
 
 
-
+/**
+ * LowCountrysBest - Callout for Lowcountrys Best award
+ * @param none
+ */
 LowCountrysBest.propTypes = {};
 export type LowCountrysBestType = InferProps<typeof LowCountrysBest.propTypes>;
 export function LowCountrysBest() {

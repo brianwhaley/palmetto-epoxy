@@ -9,43 +9,43 @@ h1 {
     margin-bottom: 30px;
 }
 
-.headerLogo{
+.header-logo{
     overflow: hidden;
 }
 
-.headerLogo img {
+.header-logo img {
     clip-path: rect(1% 98% 98% 1% round 15%);
-}
+} 
 
 @media screen and (max-width: 480px) {
-    .headerLogo {
+    .header-logo {
         max-width: 70%;
         margin: auto 15%;
     }
 }
 
-.headerRight {
+.header-right {
     margin: auto 0;
 }
 
-.headerAddress {
+.header-address {
     margin: auto 0;
 }
 
 @media screen and (max-width: 480px) {
-    .headerAddress {
+    .header-address {
         text-align: center
     }
 }
 
-.headerSocial {
+.header-social {
     margin: auto 0;
-}
+} 
 
 
 /* ===== CALLOUT STYLES ===== */
 
-#aboutus-section .gridItem {
+#aboutus-section .grid-item {
     margin: auto 0;
 }
 
@@ -150,13 +150,13 @@ section.page-section {
 }
 
 
-.bigText {
+.big-text {
     margin: auto 10%;
     text-align: center;
     font-size: 1.5em;
 }
 
-.tightGrid,
+.tight-grid,
 .section-container .row-1col {
     gap: 0px;
 }
@@ -218,7 +218,7 @@ footer {
 
 /* ===== FORM STYLES ===== */
 
-.displayVertical {
+.display-vertical {
     display: block;
     margin: 5px 5px 20px 5px !important;
     padding: 5px;
@@ -238,9 +238,9 @@ footer {
 
 /* ===== HOME PAGE ===== */
 
-#homeCTA-section .homeCTA ,
-#reviewCTA-section .homeCTA,
-#contact-section .contactCTA {
+#homeCTA-section .home-cta ,
+#reviewCTA-section .home-cta,
+#contact-section .contact-cta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,9 +248,9 @@ footer {
     font-size: 2.0em;
     margin-bottom: 30px;
 }
-#homeCTA-section .homeCTA button ,
-#reviewCTA-section .homeCTA button,
-#contact-section .contactCTA button {
+#homeCTA-section .home-cta button ,
+#reviewCTA-section .home-cta button,
+#contact-section .contact-cta button {
     border: 1px solid #999;
     cursor: pointer; 
     text-decoration: underline;
@@ -266,7 +266,7 @@ footer {
     padding: 10px;
 }
 
-.contactCTA {
+.contact-cta {
     color: white;
 }
 
