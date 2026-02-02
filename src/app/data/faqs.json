@@ -82,6 +82,30 @@
     },
     {
       "@type": "Question",
+      "name": "What is HACCP compliance, and why is it vital for commercial flooring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HACCP, which stands for Hazard Analysis and Critical Control Points, is an internationally recognized management system in which food safety is addressed through the analysis and control of biological, chemical, and physical hazards from raw material production to consumption. In the world of industrial flooring, being 'HACCP compliant' means that the flooring system is specifically engineered to eliminate the risks of contamination within a facility. Traditional concrete or tiled floors often have seams, grout lines, or porous surfaces that serve as breeding grounds for bacteria, mold, and pathogens. A HACCP-compliant epoxy or urethane system from Palmetto Epoxy provides a completely seamless, impervious, and non-porous finish. This ensures that fats, oils, and organic waste cannot penetrate the substrate, making the surface exceptionally easy to sanitize during high-pressure washdowns. Furthermore, these systems are designed to withstand thermal shock—extreme temperature shifts from hot water cleaning in cold storage areas—which prevents the cracking or peeling that would otherwise compromise a facility's hygiene. By choosing a system that supports HACCP principles, facility managers in the Lowcountry can pass rigorous health inspections with confidence, reduce the risk of costly foodborne illness outbreaks, and demonstrate a commitment to the highest standards of consumer safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do your flooring systems meet USDA and FDA requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While the USDA (United States Department of Agriculture) and FDA (Food and Drug Administration) do not technically 'certify' specific brands of flooring, they do mandate strict performance criteria for surfaces in food handling environments. According to these federal guidelines, floors must be durable, non-absorbent, and easily cleanable. Our industrial epoxy and cementitious urethane coatings are specifically formulated to meet and exceed these standards. The 'USDA-approved' designation typically refers to a coating's ability to create a permanent, seamless bond with the concrete that leaves no gaps for bacteria to hide. At Palmetto Epoxy, we utilize high-solids resins that are resistant to the corrosive chemicals found in industrial cleaning agents and food by-products like citric acids or animal fats. We also incorporate integrated 'coving' — a seamless transition where the floor meets the wall—which eliminates the 90-degree corner where dirt usually accumulates. This creates a 'bathtub' effect that is essential for maintaining a sanitary environment. By installing a system that aligns with these federal performance benchmarks, you ensure your facility is audit-ready for both USDA meat and poultry inspections and FDA food safety modernization act (FSMA) compliance, protecting your business from fines, shutdowns, or reputational damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the OSHA and ADA regulations for slip resistance in epoxy flooring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Safety is a primary concern for any commercial or industrial space, and compliance with OSHA (Occupational Safety and Health Administration) and the ADA (Americans with Disabilities Act) is non-negotiable. OSHA Regulation 1910.22 requires that all walking-working surfaces be kept in a clean, orderly, and sanitary condition, and importantly, kept dry and free of hazards. To meet these safety mandates, Palmetto Epoxy customizes every floor with specific slip-resistant aggregates, such as quartz, sand, or aluminum oxide. These additives increase the 'Coefficient of Friction' (COF) to ensure traction even in wet or oily conditions. For ADA compliance, the standard typically requires a COF of 0.60 for flat surfaces and 0.80 for inclined surfaces like ramps. We conduct precise testing to ensure our finishes provide the necessary grip for wheelchairs and pedestrians while remaining smooth enough for easy cleaning. Beyond slip resistance, we also support OSHA safety standards through color-coded line striping. We can integrate permanent safety yellow walkways, red fire extinguisher zones, and blue work-in-progress areas directly into the floor coating. This visual organization reduces workplace accidents and helps employees navigate the facility safely. When you work with Palmetto Epoxy, you aren't just getting a floor; you’re getting a engineered safety system that protects your staff and reduces your liability under federal law."
+      }
+    },
+	{
+      "@type": "Question",
       "name": "What is concrete polishing and how is it different from epoxy?",
       "acceptedAnswer": {
         "@type": "Answer",

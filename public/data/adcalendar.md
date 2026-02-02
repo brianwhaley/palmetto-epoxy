@@ -20,9 +20,17 @@
 * **Ad Run:** June 20 – July 4
 * **Offer:** "Red, White & Blue Blend" – $177.60 instant discount on any red, white, or blue-themed garage coating.
 
+## **Labor Day Campaign**
+* **Ad Run:** Aug 24 – Sept 7
+* **Offer:** "Let Us Work For You!" – Reduced labor rates for standard 2-car and 3-car garage transformations.
+
 ## **Fall Metallic Refresh**
 * **Ad Run:** Sept 1 – Sept 15
 * **Offer:** "The Autumn Flush" – 10% off custom metallic flooring systems (e.g., May River Rust) to prepare for indoor holiday hosting.
+
+##  **Halloween Spooky Savings**
+* **Ad Run:** Oct 17 – Oct 31
+* **Offer:** 15% off any installation using Orange, White, or Black in the color blend. Perfect for "May River Rust" or "Charleston Slate" combinations.
 
 ## **Veterans Day Tribute**
 * **Ad Run:** Oct 28 – Nov 11

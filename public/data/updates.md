@@ -1,5 +1,15 @@
 # Palmetto Epoxy -- Updates
 
+## 2026-02-04 Update
+* Launch of Blog, FAQs, new services page
+* Shared a draft of the new Ad Calendar
+* Also shared 10 ideas on custom color blends to move overstock colors
+* Superbowl post - Facebook, Instagram, X/Twitter, Nextdoor, LinkedIn
+* New FAQs related to safety
+* Sent invoice for Nov, Dec, Jan
+* Sent Maintenance Contract for review and sign
+
+
 ## 2026-01-28 Notes
 * Dennis is working on the licenses and paperwork for Google Business Profile
 * It's cheaper to get a re-surface for resin countertops
@@ -22,7 +32,6 @@
 
 
 ## 2026-01-23 Update
-
 * New FAQs page and faqs.json data file
 * New Sevice Page with updated descriptions and new Resin Countertops service
 * 2026 Blog Calendar
