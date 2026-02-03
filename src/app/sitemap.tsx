@@ -13,16 +13,24 @@ const contentfulApiProps = {
 	environment: config.contentful?.environment ?? "",
 	delivery_access_token: config.contentful?.delivery_access_token ?? "",
 };
+const wordpressProps = {
+	site: config.wordpress?.site ?? "blog.palmetto-epoxy.com",
+};
 
 export default async function SiteMapXML(): Promise<MetadataRoute.Sitemap> {
 	const origin = await getOriginFromNextHeaders();
 	
 	const config: SitemapConfig = {
+		routes: myRoutes.routes,
 		createPageURLs: true,
 		createImageURLsFromJSON: true,
-		createContentfulURLs: true,
+
 		contentful: contentfulApiProps,
-		routes: myRoutes.routes,
+		createContentfulURLs: true,
+
+		wordpress: wordpressProps,
+		createWordPressURLs: true,
+		createWordPressImageURLs: true,
 	};
 	const sitemap = await generateSitemap(config, origin);
 	return sitemap;

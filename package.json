@@ -1,6 +1,6 @@
 {
   "name": "palmetto-epoxy",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": true,
   "author": {
     "name": "Pixelated Technologies",
@@ -45,7 +45,7 @@
     "sass-loader": "^16.0.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0",
-    "webpack": "^5.104.1"
+    "webpack": "^5.105.0"
   },
   "overrides": {
     "@aws-sdk/xml-builder": {
