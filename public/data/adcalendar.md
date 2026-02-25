@@ -4,6 +4,10 @@
 * **Ad Run:** Jan 25 – Feb 8
 * **Offer:** "The Home Team Discount" – $250 off any custom flake blend matching the colors of the Superbowl finalists.
 
+## **Spring Cleaning Event**
+* **Ad Run:** Mar 15 – Mar 29
+* **Offer:** 15% discount when you book in February for an install in March or April, an additional 5% if you pick an overstock blend. Call to find out about our overstock colors.
+
 ## **Spring Overstock Event**
 * **Ad Run:** Mar 15 – Mar 29
 * **Offer:** 15% discount on existing "Lowcountry Moss" and "Oyster Shell Pearl" inventory to clear space for summer stock.

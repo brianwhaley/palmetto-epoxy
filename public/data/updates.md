@@ -1,5 +1,24 @@
 # Palmetto Epoxy -- Updates
 
+## 2026-02-25 Updates
+* Brian to follow up on Appeal documentation to Google
+* Brian to create email list of HOAs and real estate agencies and agents - Referral program
+* Brian to write more blog posts based on blog schedule
+* Dennis / Martha signed and returned the Maintenance Agreement
+* Martha works on the email contact list for Referral post next week
+* Brian to write a draft a Guest blog post for Pixelated Technologies for Martha
+* Brian to send Martha a copy of the book / Case Study to Martha
+
+## 2026-02-11 Updates
+* Brian submitted Appeal documentation to Google
+* Brian to Launch Resin Countertops blog post this week
+* Brian to write more blog posts based on blog schedule
+* Dennis / Martha to sign and return the Maintenance Agreement
+* Martha works on the email contact list for Referral post next week
+* Martha to write a Guest blog post for Pixelated Technologies
+* Review Superbowl post feedback / results
+* Discuss book / Case Study
+
 ## 2026-02-04 Update
 * Launch of Blog, FAQs, new services page
 * Shared a draft of the new Ad Calendar
@@ -8,6 +27,9 @@
 * New FAQs related to safety
 * Sent invoice for Nov, Dec, Jan
 * Sent Maintenance Contract for review and sign
+* question about epoxydepotusa.com
+* question about Jason Jureca
+* Guest Blog about how Pixelated Technologies has helped Palmetto Epoxy Success
 
 
 ## 2026-01-28 Notes

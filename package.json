@@ -1,55 +1,53 @@
 {
-  "name": "palmetto-epoxy",
-  "version": "0.4.3",
-  "private": true,
-  "author": {
-    "name": "Pixelated Technologies",
-    "url": "https://www.pixelated.tech/"
-  },
-  "scripts": {
-    "dev": "npm run clean && NODE_OPTIONS='--inspect' next dev  -p 3003 --experimental-https",
-    "build": "npm run clean && NODE_ENV=production next build",
-    "start": "npm run clean && next build && next start",
-    "lint": "eslint --fix",
-    "clean": "rm -rf .next && rm -rf out",
-    "generate-site-images": "node ./node_modules/@pixelated-tech/components/dist/scripts/generate-site-images.js",
-    "config:vault": "npx tsx ./node_modules/@pixelated-tech/components/dist/scripts/config-vault.ts",
-    "config:encrypt": "npm run config:vault -- encrypt src/app/config/pixelated.config.json",
-    "config:decrypt": "npm run config:vault -- decrypt src/app/config/pixelated.config.json.enc",
-    "release": "./node_modules/@pixelated-tech/components/dist/scripts/release.sh",
-    "update": "UPDATES=$(npm outdated | awk 'NR>1 {print $1\"@\"$4}' || true); if [ -n \"$UPDATES\" ]; then echo \"Updating the following packages: $UPDATES\"; echo \"$UPDATES\" | xargs npm install --force --save 2>/dev/null || true; echo \"✅ Successfully updated: $UPDATES\"; else echo \"✅ No dependency updates needed.\"; fi; npm audit fix 2>/dev/null || true"
-  },
-  "scripts-unused": {
-    "dev": "next dev --turbopack"
-  },
-  "dependencies": {
-    "@pixelated-tech/components": "^3.13.0",
-    "html-entities": "^2.6.0",
-    "md5": "^2.3.0",
-    "next": "^16.1.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
-    "@next/third-parties": "^16.1.6",
-    "@types/node": "^25.2.0",
-    "@types/prop-types": "^15.7.15",
-    "@types/react": "^19.2.10",
-    "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.54.0",
-    "@typescript-eslint/parser": "^8.54.0",
-    "eslint": "^9.39.2",
-    "eslint-config-next": "^16.1.6",
-    "sass": "^1.97.3",
-    "sass-loader": "^16.0.6",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.54.0",
-    "webpack": "^5.105.0"
-  },
-  "overrides": {
-    "@aws-sdk/xml-builder": {
-      "fast-xml-parser": "^5.3.4"
-    }
-  }
+	"name": "palmetto-epoxy",
+	"version": "0.4.4",
+	"private": true,
+	"author": {
+		"name": "Pixelated Technologies",
+		"url": "https://www.pixelated.tech/"
+	},
+	"scripts": {
+		"dev": "npm run clean && NODE_OPTIONS='--inspect' next dev  -p 3003 --experimental-https",
+		"build": "npm run clean && NODE_ENV=production next build",
+		"start": "npm run clean && next build && next start",
+		"lint": "eslint --fix",
+		"clean": "rm -rf .next && rm -rf out",
+		"generate-site-images": "node ./node_modules/@pixelated-tech/components/dist/scripts/generate-site-images.js",
+		"config:vault": "npx tsx ./node_modules/@pixelated-tech/components/dist/scripts/config-vault.ts",
+		"config:encrypt": "npm run config:vault -- encrypt src/app/config/pixelated.config.json",
+		"config:decrypt": "npm run config:vault -- decrypt src/app/config/pixelated.config.json.enc",
+		"release": "./node_modules/@pixelated-tech/components/dist/scripts/release.sh",
+		"update": "bash node_modules/@pixelated-tech/components/dist/scripts/update.sh"
+	},
+	"scripts-unused": {
+		"dev": "next dev --turbopack"
+	},
+	"dependencies": {
+		"@pixelated-tech/components": "^3.13.7",
+		"html-entities": "^2.6.0",
+		"md5": "^2.3.0",
+		"next": "^16.1.6",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3.3.4",
+		"@next/third-parties": "^16.1.6",
+		"@types/node": "^25.3.0",
+		"@types/prop-types": "^15.7.15",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@typescript-eslint/eslint-plugin": "^8.56.1",
+		"@typescript-eslint/parser": "^8.56.1",
+		"eslint": "^9.39.3",
+		"eslint-config-next": "^16.1.6",
+		"sass": "^1.97.3",
+		"sass-loader": "^16.0.7",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.56.1",
+		"webpack": "^5.105.2"
+	},
+	"optionalDependencies": {
+		"eslint": "^9.39.3"
+	}
 }
