@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 import { getRouteByKey, type Metadata, type SiteInfo, getFullPixelatedConfig } from "@pixelated-tech/components/server";
 import { generateMetaTags } from "@pixelated-tech/components/server";
 import { WebsiteSchema, LocalBusinessSchema, ServicesSchema } from "@pixelated-tech/components/server";
+import { getWordPressItems, mapWordPressToBlogPosting, SchemaBlogPosting } from '@pixelated-tech/components';
 import { PixelatedServerConfigProvider } from "@pixelated-tech/components/server";
 import { getContentfulEntriesByType, getContentfulEntryByField } from "@pixelated-tech/components";
 import { VisualDesignStyles } from "@pixelated-tech/components/server";
@@ -12,7 +13,6 @@ import myRoutes from "@/app/data/routes.json";
 import "@pixelated-tech/components/css/pixelated.global.css";
 import "@pixelated-tech/components/css/pixelated.grid.scss";
 import "@/app/globals.css";
-
 
 /** Capitalize the first letter of each word/segment in `input`. */
 export function capitalizeWords(input: string): string {
@@ -35,6 +35,11 @@ export default async function RootLayout({children,}: Readonly<{children: React.
 	let metadata: Metadata = getRouteByKey(myRoutes.routes, "path", pathname) ?? {};
 
 	const siteInfo = myRoutes.siteInfo;
+
+	const blogSite = "blog.pixelated.tech";
+	const blogPosts = (await getWordPressItems({ site: blogSite })) ?? [];
+	const blogSchemas = (await blogPosts ?? []).map(post => mapWordPressToBlogPosting(post, false));
+	
 
 	// If the route is /projects/:project, prefer the Contentful `carouselCard`
 	// metadata (server-side). Fall back to a humanized slug when Contentful
@@ -115,6 +120,9 @@ export default async function RootLayout({children,}: Readonly<{children: React.
 					<WebsiteSchema siteInfo={siteInfo as unknown as SiteInfo} />
 					<LocalBusinessSchema siteInfo={siteInfo} />
 					<ServicesSchema siteInfo={siteInfo} />
+					{ blogSchemas.map((schema, index) => (
+						<SchemaBlogPosting key={index} post={schema} />
+					)) }
 					<VisualDesignStyles visualdesign={myRoutes.visualdesign} />
 					<link rel="preload" fetchPriority="high" as="image" type="image/webp" 
 						href="https://www.palmetto-epoxy.com/images/palmetto-epoxy-logo.jpg" ></link>
