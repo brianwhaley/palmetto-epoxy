@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
 		PIXELATED_CONFIG_KEY: process.env.PIXELATED_CONFIG_KEY,
 	},
 	images: {
+		dangerouslyAllowSVG: true,
     	minimumCacheTTL: 86400, // 1 day 15552000, // 6 months
     	qualities: [25, 50, 75, 100],
 		remotePatterns: [

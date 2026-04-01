@@ -13,6 +13,7 @@ const wpSite = "blog.palmetto-epoxy.com";
 export default function Blog() {
 	
 	const [ wpPosts, setWpPosts ] = useState<BlogPostType[]>([]);
+
 	useEffect(() => {
 		ToggleLoading({show: true});
 		(async () => {
@@ -24,7 +25,7 @@ export default function Blog() {
 
 	useEffect(() => {
 		MicroInteractions({ 
-			scrollfadeElements: '.tile , .blog-post-summary',
+			scrollfadeElements: '.tile , .blog-post-summary, .scrollFadeElement',
 		});
 	}, []); 
 

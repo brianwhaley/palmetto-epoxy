@@ -5,6 +5,8 @@ import React from "react";
 import { SmartImage } from "@pixelated-tech/components";
 import Social from "@/app/elements/social";
 import Nav from "@/app/elements/nav";
+import routes from "@/app/data/routes.json";
+const siteInfo = (routes as any).siteInfo;
 
 export default function Header() {
 	return (
@@ -26,9 +28,9 @@ export default function Header() {
 					
 						<div className="grid-item header-address">
 							<h3>Dennis and Martha Aberle</h3>
-							<h3>Bluffton, SC</h3>
-							<h3>palmettoepoxy@gmail.com</h3>
-							<h3>Tel : 516-510-8186</h3>
+							<h3>{siteInfo.address.addressLocality}, {siteInfo.address.addressRegion}</h3>
+							<h3>{siteInfo.email}</h3>
+							<h3>Tel : {siteInfo.telephone}</h3>
 							<br />
 						</div>
 

@@ -20,6 +20,14 @@
 			"component" : "FormInput",
 			"props" : {
 				"type" : "hidden",
+				"id" : "domain",
+				"name" : "domain",
+				"value" : "palmetto-epoxy.com"
+			}
+		},{
+			"component" : "FormInput",
+			"props" : {
+				"type" : "hidden",
 				"id" : "subject",
 				"name" : "subject",
 				"value" : "Palmetto Epoxy Contact Us Submit"

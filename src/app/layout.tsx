@@ -1,8 +1,7 @@
 import { headers } from "next/headers";
 import { getRouteByKey, type Metadata, type SiteInfo, getFullPixelatedConfig } from "@pixelated-tech/components/server";
 import { generateMetaTags } from "@pixelated-tech/components/server";
-import { WebsiteSchema, LocalBusinessSchema, ServicesSchema } from "@pixelated-tech/components/server";
-import { getWordPressItems, mapWordPressToBlogPosting, SchemaBlogPosting } from '@pixelated-tech/components';
+import { WebsiteSchema, LocalBusinessSchema, ServicesSchema, BreadcrumbListSchema } from "@pixelated-tech/components";
 import { PixelatedServerConfigProvider } from "@pixelated-tech/components/server";
 import { getContentfulEntriesByType, getContentfulEntryByField } from "@pixelated-tech/components";
 import { VisualDesignStyles } from "@pixelated-tech/components/server";
@@ -35,11 +34,6 @@ export default async function RootLayout({children,}: Readonly<{children: React.
 	let metadata: Metadata = getRouteByKey(myRoutes.routes, "path", pathname) ?? {};
 
 	const siteInfo = myRoutes.siteInfo;
-
-	const blogSite = "blog.pixelated.tech";
-	const blogPosts = (await getWordPressItems({ site: blogSite })) ?? [];
-	const blogSchemas = (await blogPosts ?? []).map(post => mapWordPressToBlogPosting(post, false));
-	
 
 	// If the route is /projects/:project, prefer the Contentful `carouselCard`
 	// metadata (server-side). Fall back to a humanized slug when Contentful
@@ -117,12 +111,10 @@ export default async function RootLayout({children,}: Readonly<{children: React.
 						url: url ?? "",
 						siteInfo: siteInfo as unknown as SiteInfo,
 					}) }
+					<BreadcrumbListSchema routes={myRoutes.routes} currentPath={pathname} siteUrl={siteInfo.url} />
 					<WebsiteSchema siteInfo={siteInfo as unknown as SiteInfo} />
 					<LocalBusinessSchema siteInfo={siteInfo} />
 					<ServicesSchema siteInfo={siteInfo} />
-					{ blogSchemas.map((schema, index) => (
-						<SchemaBlogPosting key={index} post={schema} />
-					)) }
 					<VisualDesignStyles visualdesign={myRoutes.visualdesign} />
 					<link rel="preload" fetchPriority="high" as="image" type="image/webp" 
 						href="https://www.palmetto-epoxy.com/images/palmetto-epoxy-logo.jpg" ></link>

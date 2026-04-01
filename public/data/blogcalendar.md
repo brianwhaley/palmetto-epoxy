@@ -19,14 +19,14 @@ Designed to demonstrate broad subject matter expertise and long-term SEO authori
 
 ## Quarter 1: Foundations & Core Flooring Education
 
-* [ x ] Week 1 -- What Is Epoxy Flooring? A Homeowner's Guide for Bluffton & Hilton Head
-* [ x ] Week 2 -- Epoxy vs. Polyaspartic vs. Urethane: Which Is Right for Your Space?
-* [ x ] Week 3 -- The Complete Garage Floor Installation Process: Step-by-Step
-* [ x ] Week 4 -- How Lowcountry Humidity Affects Concrete & Coatings
-* [ x ] Week 5 -- Residential vs. Commercial Epoxy: Key Differences in Materials & Prep
+* [ X ] Week 1 -- What Is Epoxy Flooring? A Homeowner's Guide for Bluffton & Hilton Head
+* [ X ] Week 2 -- Epoxy vs. Polyaspartic vs. Urethane: Which Is Right for Your Space?
+* [ X ] Week 3 -- The Complete Garage Floor Installation Process: Step-by-Step
+* [ X ] Week 4 -- How Lowcountry Humidity Affects Concrete & Coatings
+* [ X ] Week 5 -- Residential vs. Commercial Epoxy: Key Differences in Materials & Prep
 * [  ] Week 6 -- Why Surface Preparation Matters More Than the Coating Itself
-* [  ] Week 7 -- Introduction to Concrete Polishing: Process, Benefits & Applications
-* [  ] Week 8 -- Top 7 Mistakes Homeowners Make with DIY Epoxy Kits
+* [ X ] Week 7 -- Introduction to Concrete Polishing: Process, Benefits & Applications
+* [ X ] Week 8 -- Top 7 Mistakes Homeowners Make with DIY Epoxy Kits
 * [  ] Week 9 -- Understanding Concrete Moisture Vapor & Why It Matters
 * [  ] Week 10 -- Paver Sealing Basics: Why Sealing Matters in Coastal South Carolina
 * [  ] Week 11 -- Choosing Colors, Flakes, and Finishes for Garages & Patios
@@ -38,7 +38,7 @@ Designed to demonstrate broad subject matter expertise and long-term SEO authori
 
 * [  ] Week 13 -- Best Flooring Options for Garages in Coastal Climates
 * [  ] Week 14 -- Epoxy for Patios & Outdoor Living Spaces in Bluffton
-* [  ] Week 15 -- Commercial Epoxy Flooring for Warehouses, Shops & Medical Offices
+* [ X ] Week 15 -- Commercial Epoxy Flooring for Warehouses, Shops & Medical Offices
 * [  ] Week 16 -- Driveway Coatings: Types, Lifespan & Performance in the Lowcountry
 * [  ] Week 17 -- Concrete Polishing for Retail & Office Spaces: ROI & Durability
 * [  ] Week 18 -- Paver Sealing vs. Replacement: Cost & Longevity Comparison
@@ -54,7 +54,7 @@ Designed to demonstrate broad subject matter expertise and long-term SEO authori
 ## Quarter 3: Maintenance, Repairs & Long-Term Performance
 
 * [  ] Week 25 -- How to Maintain Epoxy Floors in Humid Climates
-* [  ] Week 26 -- Signs Your Epoxy Floor Needs Repair or Recoating
+* [ X ] Week 26 -- Signs Your Epoxy Floor Needs Repair or Recoating
 * [  ] Week 27 -- Maintaining Polished Concrete: Cleaning, Burnishing &    Resealing
 * [  ] Week 28 -- How Salt Air Affects Concrete, Pavers & Coatings
 * [  ] Week 29 -- Preventing Hot Tire Pickup in Garage Floors

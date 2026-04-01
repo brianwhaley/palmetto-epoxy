@@ -16,7 +16,7 @@
 		"image": "/images/palmetto-epoxy-logo.jpg",
 		"image_height": "512",
 		"image_width": "512",
-		"telephone": "+1 (516) 510-8186",
+		"telephone": "(516) 510-8186",
 		"address": {
 			"streetAddress": "116 Beckenridge Circle",
 			"addressLocality": "Bluffton",
@@ -283,26 +283,54 @@
 				"epoxy floor coatings",
 				"style guide"
 			]
-		},
-		{
-			"name": "Humans Txt",
+		} , {
+			"name": "Admin",
 			"hidden": true,
-			"path": "/humans.txt",
-			"title": "Palmetto Epoxy - Humans Txt",
-			"description": "A Humans-Only page describing the people who worked on this website. ",
-			"keywords": [
-				"Palmetto Epoxy",
-				"epoxy floor coatings",
-				"humans txt"
+			"routes": [ 
+				{ 
+					"name": "404", 
+					"path": "/404", 
+					"hidden": true,
+					"title": "Palmetto Epoxy - Page Not Found",
+					"description": "The page you are looking for could not be found.",
+					"keywords": ["Palmetto Epoxy", "404", "page not found"]  
+				} , { 
+					"name": "Sitemap", 
+					"path": "/sitemap.xml", 
+					"hidden": true,
+					"title": "Palmetto Epoxy - Sitemap",
+					"description": "Palmetto Epoxy sitemap.xml",
+					"keywords": ["Palmetto Epoxy", "sitemap.xml"]  
+				} , {
+					"name" : "Robots.txt",
+					"path" : "/robots.txt",
+					"hidden": true,
+					"title": "Palmetto Epoxy - Robots.txt",
+					"description": "Palmetto Epoxy robots.txt",
+					"keywords": ["Palmetto Epoxy", "robots.txt"]
+				} , {
+					"name": "Web Manifest",
+					"path": "/manifest.webmanifest",
+					"hidden": true,
+					"title": "Palmetto Epoxy - Web Manifest",
+					"description": "Palmetto Epoxy web manifest",
+					"keywords": ["Palmetto Epoxy", "manifest.webmanifest"]
+				} , { 
+					"name": "Humans Txt", 
+					"path": "/humans.txt", 
+					"hidden": true,
+					"title": "Palmetto Epoxy - Humans Txt",
+					"description": "Humans Txt",
+					"keywords": ["Palmetto Epoxy", "humans txt"] 
+				} , {
+					"name": "Security Txt",
+					"hidden": true,
+					"path": "/security.txt",
+					"title": "Palmetto Epoxy - Security Txt",
+					"description": "Security contact and vulnerability disclosure information.",
+					"keywords": ["Palmetto Epoxy","security txt","security"]
+				} 
 			]
-		},
-		{
-			"name": "Security Txt",
-			"hidden": true,
-			"path": "/security.txt",
-			"title": "Palmetto Epoxy - Security Txt",
-			"description": "Security contact and vulnerability disclosure information.",
-			"keywords": ["Palmetto Epoxy","security txt","security"]
 		}
 	],
 	"visualdesign": {

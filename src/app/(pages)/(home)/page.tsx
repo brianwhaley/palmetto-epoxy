@@ -3,29 +3,41 @@
 
 import React, { useState, useEffect } from "react";
 import * as CalloutLibrary from "@/app/elements/calloutlibrary";
-import { Callout, usePixelatedConfig, Loading } from "@pixelated-tech/components";
-import { Carousel } from "@pixelated-tech/components";
-import type { CarouselCardType } from "@pixelated-tech/components";
-import { getContentfulEntriesByType } from "@pixelated-tech/components";
-import { PageSection, PageGridItem } from "@pixelated-tech/components";
+import { usePixelatedConfig } from "@pixelated-tech/components";
+import { Callout } from "@pixelated-tech/components";
+import { Carousel, type CarouselCardType } from "@pixelated-tech/components";
+import { getContentfulEntriesByType, getContentfulReviewsSchema, ReviewSchema } from "@pixelated-tech/components";
+import { PageSection, PageSectionHeader, PageGridItem } from "@pixelated-tech/components";
+import { BlogPostList , type BlogPostType, getCachedWordPressItems } from '@pixelated-tech/components';
+import { Loading, ToggleLoading } from '@pixelated-tech/components';
 
 export default function Home() {
 
-	const [ carouselCards , setCarouselCards ] = useState<CarouselCardType[]>([]);
-
 	const config = usePixelatedConfig();
-
 	if (!config) {
 		return <Loading />;
 	}
 
+	const [ reviewSchemas , setReviewSchemas ] = useState<any[]>([]);
+
+	const wpSite = "blog.palmetto-epoxy.com";
+	const [ wpPosts, setWpPosts ] = useState<BlogPostType[]>([]);
+	useEffect(() => {
+		ToggleLoading({show: true});
+		(async () => {
+			const posts = await getCachedWordPressItems({ site: wpSite, count: 1 }); // 1 week
+			setWpPosts(posts ?? []);
+			ToggleLoading({show: false});
+		})();
+	}, []);
+
+	const [ carouselCards , setCarouselCards ] = useState<CarouselCardType[]>([]);
 	const apiProps = {
 		base_url: config?.contentful?.base_url ?? "",
 		space_id: config?.contentful?.space_id ?? "",
 		environment: config?.contentful?.environment ?? "",
 		delivery_access_token: config?.contentful?.delivery_access_token ?? "",
 	};
-
 	useEffect(() => {
 		async function getCarouselCards() {
 			const contentType = "reviews"; 
@@ -42,6 +54,15 @@ export default function Home() {
 				};
 			});
 			setCarouselCards(reviewCards);
+
+			// Fetch review schemas for JSON-LD
+			const schemas = await getContentfulReviewsSchema({
+				apiProps: apiProps,
+				itemName: "Epoxy Flooring Service",
+				itemType: "Service",
+				publisherName: "Palmetto Epoxy"
+			});
+			setReviewSchemas(schemas);
 		}
 		getCarouselCards();
 	}, []);
@@ -88,7 +109,19 @@ export default function Home() {
 				</PageGridItem>
 			</PageSection>
 
+
+
+			<PageSection id="social-section" columns={1} >
+				<PageSectionHeader title="Read Our Most Recent Blog Post" />
+				<BlogPostList site={wpSite} posts={wpPosts} count={1} showCategories={false} />
+			</PageSection>
+
+
+
 			<PageSection columns={1} id="home-reviews-section">
+				{reviewSchemas.map((review, idx) => (
+					<ReviewSchema key={idx} review={review} />
+				))}
 				<Carousel 
 					cards={carouselCards} 
 					draggable={true}
